@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+ <TITLE>Student Portal BGCTUB</TITLE>
+
+    <lin rel ='stylesheet' href="/home/niyas/New Folder/main.css"></lin>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<!-- Wrap all page content here -->
+<div id="wrap">
+
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default" data-spy="affix" data-offset-top="60" data-offset-bottom="70" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/view">Result</a></li>
+          <li><a href="/">logout</a></li>
+
+
+
+
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+  </div><!-- /.container-
+
+
+
+
+
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<div align='center'>
+<h1>STUDENT RESULT</h1>
+
+
+<div align ='center'>
+<table class="equalDevide text-center" cellpadding="1" cellspacing="0" width="70%" border="2px">
+    <td><b>Student Name</b></td>
+    <td><b>ID</b></td>
+    <td><b>1st</b></td>
+    <td><b>2nd</b></td>
+    <td><b>3rd</b></td>
+    <td><b>4th</b></td>
+    <td><b>5th</b></td>
+    <td><b>6th</b></td>
+    <td><b>7th</b></td>
+    <td><b>8th</b></td>
+    </thead>
+    {% for row in rows %}
+    <tr>
+        <td>{{row["name"]}}</td>
+        <td>{{row["studentID"]}}</td>
+        <td>{{row["firstSem"]}}</td>
+        <td>{{row["secondSem"]}}</td>
+        <td>{{row["thirdSem"]}}</td>
+        <td>{{row["fourthSem"]}}</td>
+        <td>{{row["fifthSem"]}}</td>
+        <td>{{row["sixthSem"]}}</td>
+        <td>{{row["seventhSem"]}}</td>
+        <td>{{row["eightSem"]}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+</div>
+
+
+</div>
+</div>
+</div>
+ <script text="javascript">
+document.body.style.backgroundImage="url('static/im.jepg')";
+ </script>
+</body>
+</html>
+
+</html>

@@ -1,0 +1,92 @@
+
+{% block body %}
+<HEAD>
+ <TITLE>Student Portal BGCTUB</TITLE>
+ 
+
+<lin rel ='stylesheet' href="stylesheet/main.css"></lin>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+ </HEAD>     
+
+ <BODY>
+ <!-- Wrap all page content here -->
+<div id="wrap">
+  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default" data-spy="affix" data-offset-top="60" data-offset-bottom="70" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/home">Home</a></li>
+          <li><a href="/view">Result</a></li>
+          <li><a href="/insert">add</a></li>
+            <li><a href="/update">update</a></li>
+          <li><a href="/delete">delete</a></li>
+          <li><a href="/">logout</a></li>
+           
+
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  
+ <FORM method="post" action="/up">
+ <div id = "container">
+ <div align = "center">
+ <H1>Update Student Details</H1>
+
+  <div class="text-center lead"></div>
+                <input type="text" name="name" placeholder="Enter student name"><br><br>
+                <input  type="text" name="reg" placeholder="Enter id"><br><br>
+                <input  type="text" name="first" placeholder="CGPA-1st semester"><br><br>
+                <input  type="text" name="second" placeholder="CGPA-2nd semester"><br><br>
+                <input  type="text" name="third" placeholder="CGPA-3rd semester"><br><br>
+                <input  type="text" name="fourth" placeholder="CGPA-4th semester"><br><br>
+                <input  type="text" name="fifth" placeholder="CGPA-5th semester"><br><br>
+                <input  type="text" name="sixth" placeholder="CGPA-6th semester"><br><br>
+                <input  type="text" name="seventh" placeholder="CGPA-7th semester"><br><br>
+                <input  type="text" name="eight" placeholder="CGPA-8th semester"><br><br>
+            <br>
+
+     <INPUT TYPE="submit"><br>
+     {% if msg %}
+        {{msg}}
+     {% endif %}
+</div>
+ </div>
+ </FORM>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <script text="javascript">
+document.body.style.backgroundImage="url('static/im.jpeg')";
+ </script>
+
+ </BODY>
+
+ </HTML>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
