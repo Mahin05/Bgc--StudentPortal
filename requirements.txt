@@ -40,7 +40,7 @@ pycparser==2.20
 pygame==1.9.6
 PyGetWindow==0.0.8
 PyInstaller==3.6
-PyJWT==1.7.1
+PyJWT==2.4.0
 PyMsgBox==1.0.7
 pyodbc==4.0.30
 pyperclip==1.8.0
